@@ -19,8 +19,8 @@ In order to start a new presentation, do the following:
     git init
     git add .
     git commit -am "Initial commit"
-    mkvirtualenv -p python2.7 reveal-template 
-    workon reveal-template 
+    virtualenv -p python2.7 reveal-template
+    source reveal-template/bin/activate
     pip install -r requirements.txt
 
 Now you should have all necessary Python software installed. 
