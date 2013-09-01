@@ -13,7 +13,7 @@ them to Github.
 
 In order to start a new presentation, do the following:
 
-    git clone git@github.com:mbrochh/reveal-template.git
+    git clone git@github.com:alanorth/reveal-template.git
     cd reveal-template
     rm -rf .git
     git init
