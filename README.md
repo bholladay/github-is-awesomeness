@@ -25,21 +25,13 @@ In order to start a new presentation, do the following:
 
 Now you should have all necessary Python software installed. 
 
-For further convenience you should install [observr](https://github.com/kevinburke/observr/) 
-
 
 ## Usage
 
 In order to build your presentation you will create and manipulate files in 
-the `source` folder. If you want to use Jinja templates to split up your
-presentation, it would be cool to render the template into the `presentation`
-folder every time you change something. 
+the `source` folder.
 
-In order to run the file system watcher, execute:
-
-    ./source-watcher.sh
-
-If you don't want to use the file system watcher, you can trigger a build via
+You can trigger a build via
 
     fab build
 
@@ -47,7 +39,7 @@ Now make your changes in the source directory. When you are done, review your
 changes:
 
     fab build
-    open presentation/index.html
+    xdg-open presentation/index.html
 
 If all looks good, publish to Github:
 
