@@ -19,5 +19,4 @@ def build():
         fh.write(rendered_template)
 
 def publish():
-    build()
     local('ghp-import -p presentation')
