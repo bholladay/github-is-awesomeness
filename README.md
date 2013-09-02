@@ -17,11 +17,17 @@ In order to start a new presentation, do the following:
     cd reveal-template
     git submodule init
     git submodule update
-    virtualenv -p python2.7 reveal-template
-    source reveal-template/bin/activate
+    mkvirtualenv -p `which python2.7` reveal-template
+    workon reveal-template
     pip install -r requirements.txt
 
-Now you should have all necessary Python software installed. 
+Now you should have all necessary Python software installed into a python virtual
+environment called `reveal-template`.
+
+**Note:** This assumes you've installed python-virtualenvwrapper in your distro
+and configured your shell to use it.  Perhaps see the [Arch Linux wiki](https://wiki.archlinux.org/index.php/Python_VirtualEnv) for help.
+Otherwise, you can use the vanilla python-virtualenv, but it's just a bit more
+manual.
 
 
 ## Usage
