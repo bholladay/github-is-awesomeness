@@ -38,56 +38,172 @@
 			<div class="slides">
                 
 <section>
-    <h1>Your Title</h1>
-    <h3>Your sub-title</h3>
+    <h1>GitHub is Awesomeness</h1>
+    <h3>Git is awesome and GitHub follows suit</h3>
 </section>
-<section data-markdown>
+
+<section>
+    <section data-markdown>
     <script type="text/template">
-        ## Testing Markdown
+        
 
-        This _should_ be __bold__ and this should be a [link](https://github.com/mbrochh/reveal-template).
+## Why Git?
+- Do you ever want to go back to a version of a file from 4 days ago?
+- Do you want to see what (or who) changed a file 2 weeks ago?
+- Want to keep every version of an image, layout, or code file?
+- Ever need to fix a bug in an old version, but you're working on new version?
+- Ever have two strategies for a solution, and want try them both?
+- Do you ever work in a group on the same files?
+- Want to know what (or who) broke the unit tests and when it happened?
 
-        ### Heading 3
 
-        * A list
-        * With three
-        * items
     </script>
 </section>
-<section>
-    <h2>Testing code snippets</h2>
-    <pre><code>
-    import os
-    path = os.path.join('foo', 'bar')
-    def do_something(path):
-        return path
-    </code></pre>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## Git can
+- Revert files back to a previous state
+- Compare changes over time
+- See who last modified something.
+- Using a VCS also generally means that if you screw things up or lose files, you can easily recover.
+- You get all this for very little overhead.
+
+[GitPro Book](http://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
+
+
+    </script>
 </section>
-<section>
-    <section data-background="#ff0000" data-markdown>
-        <script type="text/template">
-            ## Testing backgrounds
+    <section data-markdown>
+    <script type="text/template">
+        
 
-            Now we are red
-        </script>
-    </section>
-    <section data-background="#00ff00" data-markdown>
-        <script type="text/template">
-            ## Testing backgrounds
+## Not just for groups
+- You can save the state of any project as often as you like.
+- You can search over the comment associated with a changeset.
 
-            Now we are green
-        </script>
-    </section>
-    <section data-background="#0000ff" data-markdown>
-        <script type="text/template">
-            ## Testing backgrounds
+```shell
+git log --grep=word
+```
 
-            Now we are blue
+- You can search over the actual changes. Use the pickaxe.
 
-            <small>dabadi dabadai...</small>
-        </script>
-    </section>
+```shell
+git log -S <whatever> --source --all
+```
+
+- Easy to set up on any project, so why not?
+
+```shell
+git init
+```
+
+
+    </script>
 </section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## Git is Awesomeness
+
+Git is flexible enough to handle just about any workflow, whether individual or group.
+
+Branches are cheap and merges are easy
+
+_(most of the time)_.
+
+
+    </script>
+</section>
+</section>
+
+<section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## Git: The Basics
+
+A quick intro to the major concepts of git.
+
+
+    </script>
+</section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## Git saves the state of your code
+
+You can think about that state as a node on a graph.
+
+![git commit](images/git_commit.jpg)
+
+[Image Source](https://www.atlassian.com/git/tutorials/saving-changes/git-add)
+
+
+    </script>
+</section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## Some commits have names
+
+![git commit names](images/git_commit_names.jpg)
+
+[Image Souce](https://www.atlassian.com/git/tutorials/viewing-old-commits)
+
+Master is the main branch name.
+
+All comits have a SHA1 hash name
+
+(like `4dc931002a4cfee3c9e26a7f2767bb9ea8a01265`)
+```bash
+git reflog
+```
+
+
+    </script>
+</section>
+</section>
+
+<section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## Why GitHub
+GitHub is the easiest way to host your public and private repositories
+
+It makes it extremely easy to work in groups, to comment on code, make suggestions, allow others to make suggestions, without code owners losing control of a codebase.
+
+We use it extensively at work to peer review code.
+
+
+    </script>
+</section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## The Most Important Social Network
+> There is a social network whose sole purpose is facilitating the collaborative production of knowledge and invention: GitHub
+
+[Source](http://7fff.com/2012/07/the-most-important-social-network-github/)
+
+### Examples:
+1. [Discussion of a contribution](https://github.com/copycopter/copycopter-server/pull/67)
+2. [Discussion of a single line of code](https://github.com/rails/rails/pull/6348#discussion-diff-848099)
+3. [Discussion of a bug](https://github.com/rails/rails/issues/7034)
+
+
+    </script>
+</section>
+</section>
+
 
 			</div>
 
