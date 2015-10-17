@@ -1,2 +1,8 @@
 *.pyc
 presentation/*
+bin/*
+include/*
+lib/*
+local/*
+pip-selfcheck.json
+src/*
