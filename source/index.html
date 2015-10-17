@@ -2,7 +2,23 @@
 
 {% block slides %}
 {% include "source/title.html" %}
-{% include "source/test_markdown.html" %}
-{% include "source/test_code.html" %}
-{% include "source/test_backgrounds.html" %}
+
+<section>
+    {% include "source/why_git/why_git.md" %}
+    {% include "source/why_git/git_can_do.md" %}
+    {% include "source/why_git/not_just_for_groups.md" %}
+    {% include "source/why_git/git_awesome.md" %}
+</section>
+
+<section>
+    {% include "source/git_basics/title.md" %}
+    {% include "source/git_basics/git_commit.md" %}
+    {% include "source/git_basics/git_commit_names.md" %}
+</section>
+
+<section>
+    {% include "source/why_github/why_github.md" %}
+    {% include "source/why_github/github_importance.md" %}
+</section>
+
 {% endblock %}
