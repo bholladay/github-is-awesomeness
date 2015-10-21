@@ -3,22 +3,40 @@
 {% block slides %}
 {% include "source/title.html" %}
 
-<section>
+<section class="why-git">
     {% include "source/why_git/why_git.md" %}
     {% include "source/why_git/git_can_do.md" %}
     {% include "source/why_git/not_just_for_groups.md" %}
     {% include "source/why_git/git_awesome.md" %}
 </section>
 
-<section>
+<section class="git-basics">
     {% include "source/git_basics/title.md" %}
     {% include "source/git_basics/git_commit.md" %}
     {% include "source/git_basics/git_commit_names.md" %}
+    {% include "source/git_basics/git_is_distributed.md" %}
+    {% include "source/git_basics/git_fetch.md" %}
 </section>
 
-<section>
+<section class="why-github">
     {% include "source/why_github/why_github.md" %}
     {% include "source/why_github/github_importance.md" %}
+</section>
+
+<section class="git-tips">
+    {% include "source/git_tips/title.md" %}
+    {% include "source/git_tips/gitconfig_basic.md" %}
+    {% include "source/git_tips/gitconfig_log.md" %}
+    {% include "source/git_tips/gitconfig_external_cmd.md" %}
+    {% include "source/git_tips/shell_integration.md" %}
+</section>
+
+<section class="github-tips">
+    {% include "source/github_tips/title.md" %}
+    {% include "source/github_tips/references.md" %}
+    {% include "source/github_tips/whitespace.md" %}
+    {% include "source/github_tips/small_branches.md" %}
+    {% include "source/github_tips/dependent_branches.md" %}
 </section>
 
 {% endblock %}
