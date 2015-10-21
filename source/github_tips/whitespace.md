@@ -15,6 +15,6 @@ git diff -w
 
 Add `?w=1` to any diff URL and GitHub will strip the whitespace.
 
-TODO: Add link to my whitespace example branch here.
+[Original](https://github.com/bholladay/github-is-awesomeness/pull/3) vs [whitespace ignored with `?w=1`](https://github.com/bholladay/github-is-awesomeness/pull/3?w=1)
 
 {% endblock %}
