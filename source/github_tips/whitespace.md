@@ -8,10 +8,8 @@
 git can ignore whitespace in a diff:
 
 ```bash
-# TODO: Fill in the command here
-git diff
+git diff -w
 ```
-
 
 ### Github
 
