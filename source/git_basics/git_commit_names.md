@@ -5,7 +5,7 @@
 
 ![git commit names](images/git_commit_names.jpg)
 
-[Image Souce](https://www.atlassian.com/git/tutorials/viewing-old-commits)
+[Image Source](https://www.atlassian.com/git/tutorials/viewing-old-commits)
 
 Master is the main branch name.
 

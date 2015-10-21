@@ -3,12 +3,14 @@
 
 ## gitconfig tree visualization
 
-```git config
+```gitconfig
 [alias]
 # ...
-# TODO: fill in the long `git l` commmand here`
+    l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %aN %ar, %ai%Creset'
 ```
 
-_Hint_: This alias really helps you understand the git node tree.
+![git l](images/git_l.jpg)
+
+_Hint_: You can see the git node tree with branches.
 
 {% endblock %}
