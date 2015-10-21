@@ -3,13 +3,13 @@
 
 ## Not just for groups
 - You can save the state of any project as often as you like.
-- You can search over the comment associated with a changeset.
+- You can search over comment messages:
 
 ```shell
-git log --grep=word
+git log --grep=<search>
 ```
 
-- You can search over the actual changes. Use the pickaxe.
+- You can search over the actual changes. Use the pickaxe:
 
 ```shell
 git log -S <whatever> --source --all
