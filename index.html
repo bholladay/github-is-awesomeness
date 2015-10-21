@@ -42,19 +42,19 @@
     <h3>Git is awesome and GitHub follows suit</h3>
 </section>
 
-<section>
+<section class="why-git">
     <section data-markdown>
     <script type="text/template">
         
 
 ## Why Git?
-- Do you ever want to go back to a version of a file from 4 days ago?
-- Do you want to see what (or who) changed a file 2 weeks ago?
-- Want to keep every version of an image, layout, or code file?
+- Ever need a version of a file from 4 days ago?
+- Ever need to see what (or who) changed a file 2 weeks ago?
+- Want to keep every version of an image, layout, or code?
 - Ever need to fix a bug in an old version, but you're working on new version?
 - Ever have two strategies for a solution, and want try them both?
-- Do you ever work in a group on the same files?
-- Want to know what (or who) broke the unit tests and when it happened?
+- Ever work in a group on the same files?
+- Ever need to know what (or who) broke the unit tests and when it happened?
 
 
     </script>
@@ -81,13 +81,13 @@
 
 ## Not just for groups
 - You can save the state of any project as often as you like.
-- You can search over the comment associated with a changeset.
+- You can search over comment messages:
 
 ```shell
-git log --grep=word
+git log --grep=<search>
 ```
 
-- You can search over the actual changes. Use the pickaxe.
+- You can search over the actual changes. Use the pickaxe:
 
 ```shell
 git log -S <whatever> --source --all
@@ -119,7 +119,7 @@ _(most of the time)_.
 </section>
 </section>
 
-<section>
+<section class="git-basics">
     <section data-markdown>
     <script type="text/template">
         
@@ -154,13 +154,15 @@ You can think about that state as a node on a graph.
 
 ![git commit names](images/git_commit_names.jpg)
 
-[Image Souce](https://www.atlassian.com/git/tutorials/viewing-old-commits)
+[Image Source](https://www.atlassian.com/git/tutorials/viewing-old-commits)
 
 Master is the main branch name.
 
 All comits have a SHA1 hash name
 
 (like `4dc931002a4cfee3c9e26a7f2767bb9ea8a01265`)
+
+*Tip:* if you lose track of a commit name:
 ```bash
 git reflog
 ```
@@ -168,9 +170,41 @@ git reflog
 
     </script>
 </section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## Git is distributed
+
+There is a fully functioning repository on each workstation.
+
+Commands:
+
+```bash
+git clone git@github.com:bholladay/github-is-awesomeness.git
+```
+
+
+    </script>
+</section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## The work moves on
+
+Check for changes
+
+```bash
+git fetch
+```
+
+
+    </script>
+</section>
 </section>
 
-<section>
+<section class="why-github">
     <section data-markdown>
     <script type="text/template">
         
@@ -198,6 +232,180 @@ We use it extensively at work to peer review code.
 1. [Discussion of a contribution](https://github.com/copycopter/copycopter-server/pull/67)
 2. [Discussion of a single line of code](https://github.com/rails/rails/pull/6348#discussion-diff-848099)
 3. [Discussion of a bug](https://github.com/rails/rails/issues/7034)
+
+
+    </script>
+</section>
+</section>
+
+<section class="git-tips">
+    <section data-markdown>
+    <script type="text/template">
+        
+
+# Git Tips
+
+A shotgun approach
+
+
+    </script>
+</section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## The gitconfig
+
+Use one
+```gitconfig
+[user]
+    email="bhsacto@gmail.com"
+    name="Bryce Holladay"
+[alias]
+    # svn aliases
+    co=checkout
+    ci=commit
+    st=status
+    br-branch
+```
+
+
+    </script>
+</section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## gitconfig tree visualization
+
+```gitconfig
+[alias]
+# ...
+    l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %aN %ar, %ai%Creset'
+```
+
+![git l](images/git_l.jpg)
+
+_Hint_: You can see the git node tree with branches.
+
+
+    </script>
+</section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## gitconfig external command
+
+```bash
+git config --global alias.visual '!gitk'
+```
+
+_Note_: This command just makes an entry in `~/.gitconfig
+
+Without `--global` the config would get added to the repo `.git/config`.
+
+
+    </script>
+</section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## Shell integration
+
+### Autocompletion
+
+Tough branch names are easy.
+
+Recommend `zsh` with [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) for pre-installed magic.
+
+References: [bash](https://git-scm.com/book/en/v2/Git-in-Other-Environments-Git-in-Bash), [zsh](https://git-scm.com/book/en/v2/Git-in-Other-Environments-Git-in-Zsh), and [others](https://git-scm.com/book/en/v2/Git-in-Other-Environments-Graphical-Interfaces)
+
+
+### Command-line status
+
+Reports  what branch you are on, whether the repo is dirty, etc.
+
+![git shell integration](images/git_shell.jpg)
+
+
+    </script>
+</section>
+</section>
+
+<section class="github-tips">
+    <section data-markdown>
+    <script type="text/template">
+        
+
+# Github Tips
+
+A smattering of Gitub awesome
+
+
+    </script>
+</section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## GitHub provides references
+
+1. GitHub automatically creates links in comments when using a git commit SHA-1.
+2. Reference issues and PR's with the hashtag `#<number>` in comments.
+3. Cross-references external repos with `<user>/<repo>#<issue_number>`.
+4. Click on the line number to make a custom link to a specific line number.  Appends to the URL `#L<line_number>`.
+
+
+    </script>
+</section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## Whitespace options
+
+### Git
+
+git can ignore whitespace in a diff:
+
+```bash
+git diff -w
+```
+
+### Github
+
+Add `?w=1` to any diff URL and GitHub will strip the whitespace.
+
+[Original](https://github.com/bholladay/github-is-awesomeness/pull/3) vs [whitespace ignored with `?w=1`](https://github.com/bholladay/github-is-awesomeness/pull/3?w=1)
+
+
+    </script>
+</section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## Pull request best practices.
+
+Make your branches as small as possible.  No one wants to review 1200 lines of code.
+
+![git diff too big](http://wellingguzman.com/images/github-diff.jpg)
+
+
+    </script>
+</section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## Dependent branches
+
+If you got a big feature, make bite-sized branches that are dependant on each other.
+You can go as nested as you need to.
+
+![git dependent branch](images/github_pr_based_on_another_branch.jpg)
 
 
     </script>
