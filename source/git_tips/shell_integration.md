@@ -5,16 +5,17 @@
 
 ### Autocompletion
 
-Always forgetting how to spell your coworkers' branch names?
+Tough branch names are easy.
 
-Available for `bash`...I recommend `zsh` with its extensive plugins.
+Recommend `zsh` with [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) for pre-installed magic.
 
-TODO: Add a link for instructions on installing autocomplete.
+References: [bash](https://git-scm.com/book/en/v2/Git-in-Other-Environments-Git-in-Bash), [zsh](https://git-scm.com/book/en/v2/Git-in-Other-Environments-Git-in-Zsh), and [others](https://git-scm.com/book/en/v2/Git-in-Other-Environments-Graphical-Interfaces)
+
 
 ### Command-line status
 
-Reports whether a directory needs a commit, what branch you are on and more.
+Reports  what branch you are on, whether the repo is dirty, etc.
 
-TODO: Add a picture of shell integration
+![git shell integration](images/git_shell.jpg)
 
 {% endblock %}
