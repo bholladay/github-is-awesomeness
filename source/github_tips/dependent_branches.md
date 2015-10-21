@@ -3,8 +3,9 @@
 
 ## Dependent branches
 
-You can base a branch on another branch.  If you got a big feature, make bite-sized branches that are dependant on each other.  You can go as nested as you need to.
+If you got a big feature, make bite-sized branches that are dependant on each other.
+You can go as nested as you need to.
 
-TODO: Show a PR based on another PR.
+![git dependent branch](images/github_pr_based_on_another_branch.jpg)
 
 {% endblock %}
