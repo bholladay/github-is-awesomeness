@@ -12,6 +12,8 @@ Master is the main branch name.
 All comits have a SHA1 hash name
 
 (like `4dc931002a4cfee3c9e26a7f2767bb9ea8a01265`)
+
+*Tip:* if you lose track of a commit name:
 ```bash
 git reflog
 ```
