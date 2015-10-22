@@ -3,7 +3,7 @@
 
 ## GitHub Gists
 
-Great for little code snippets, ideas, sudo-code.
+Great for little code snippets, ideas, and pseudocode.
 
 https://gist.github.com/
 
