@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Your Title</title>
+		<title>GitHub is Awesomeness</title>
 
 		<meta name="description" content="Your description">
 		<meta name="author" content="Your Name">
@@ -202,6 +202,21 @@ git fetch
 
     </script>
 </section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## New changes, sync them up
+
+```bash
+git merge origin/master
+# OR for a fetch/merge in one
+git pull
+```
+
+
+    </script>
+</section>
 </section>
 
 <section class="why-github">
@@ -350,12 +365,61 @@ A smattering of Gitub awesome
     <script type="text/template">
         
 
+## Workflow Alternatives
+
+1. Basic server / client (think svn).
+2. Pull Requests
+3. Forking with Pull Requests
+4. [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/) - release numbers and hotfixes
+
+
+    </script>
+</section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## Pull Request Workflow
+
+This works well for internal groups.
+
+1. Branch, branch, branch (even for a small change or fix)
+1. Commit often
+1. Push once tested (or earlier if you need help/collaboration)
+1. `git push -u origin <branch_name>`
+1. Create pull request
+1. Tag for code review if ready and @mention reviewers
+1. Tag "in progress" if not yet ready
+1. Peer Review
+1. Merge
+1. Delete the branch
+
+
+    </script>
+</section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
 ## GitHub provides references
 
 1. GitHub automatically creates links in comments when using a git commit SHA-1.
 2. Reference issues and PR's with the hashtag `#<number>` in comments.
 3. Cross-references external repos with `<user>/<repo>#<issue_number>`.
 4. Click on the line number to make a custom link to a specific line number.  Appends to the URL `#L<line_number>`.
+
+
+    </script>
+</section>
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## GitHub Gists
+
+Great for little code snippets, ideas, sudo-code.
+
+https://gist.github.com/
 
 
     </script>
@@ -406,6 +470,22 @@ If you got a big feature, make bite-sized branches that are dependant on each ot
 You can go as nested as you need to.
 
 ![git dependent branch](images/github_pr_based_on_another_branch.jpg)
+
+
+    </script>
+</section>
+</section>
+
+<section class="more">
+    <section data-markdown>
+    <script type="text/template">
+        
+
+## More topics
+- [Merging vs. Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+- [Reset, Checkout, and Revert](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
+- [Advanced Git log](https://www.atlassian.com/git/tutorials/git-log)
+- [Refs and the Reflog](https://www.atlassian.com/git/tutorials/refs-and-the-reflog)
 
 
     </script>
