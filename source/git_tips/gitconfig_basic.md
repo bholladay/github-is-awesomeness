@@ -13,7 +13,7 @@ Use one
     co=checkout
     ci=commit
     st=status
-    br-branch
+    br=branch
 ```
 
 {% endblock %}
